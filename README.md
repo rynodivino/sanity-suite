@@ -5,6 +5,7 @@ A collection of services to assist with development and operations workflows.
 ## Services
 
 ### Badge Status
+
 A service that generates SVG badges for different release environments. It stores status data in a JSON file and serves badges via a Fastify server.
 
 - **Port**: 3000
@@ -15,6 +16,7 @@ A service that generates SVG badges for different release environments. It store
   - `GET /badge/:workflow` - Get badge based on GitHub workflow status
 
 ### MS Teams Chatbot
+
 A chatbot service for Microsoft Teams integration.
 
 - **Port**: 4000
@@ -22,6 +24,7 @@ A chatbot service for Microsoft Teams integration.
 ## Setup
 
 ### Prerequisites
+
 - Node.js (16+)
 - Docker & Docker Compose
 

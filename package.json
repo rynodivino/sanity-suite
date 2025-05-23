@@ -13,15 +13,20 @@
     "start:badge": "cd badge-status && npm start",
     "start:chatbot": "cd msteams-chatbot && npm start",
     "build": "docker-compose build",
-    "test": "npm run test --workspaces",
-    "lint": "npm run lint --workspaces"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md}\""
   },
   "dependencies": {
     "fastify": "^5.3.3"
   },
   "devDependencies": {
     "eslint": "^8.42.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.5.3",
+    "vitest": "^1.0.0"
   },
   "engines": {
     "node": ">=16.0.0"

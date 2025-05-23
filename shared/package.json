@@ -4,5 +4,9 @@
   "description": "Shared utilities for sanity-suite services",
   "main": "utils.js",
   "type": "module",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "debug": "^4.4.1",
+    "dotenv": "^16.5.0"
+  }
 }
