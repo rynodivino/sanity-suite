@@ -1,0 +1,8 @@
+{
+  "name": "@sanity-suite/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities for sanity-suite services",
+  "main": "utils.js",
+  "type": "module",
+  "private": true
+}

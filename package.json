@@ -1,0 +1,29 @@
+{
+  "name": "sanity-suite",
+  "version": "1.0.0",
+  "description": "A collection of sanity services for development and operations",
+  "private": true,
+  "workspaces": [
+    "badge-status",
+    "msteams-chatbot",
+    "shared"
+  ],
+  "scripts": {
+    "start": "docker-compose up",
+    "start:badge": "cd badge-status && npm start",
+    "start:chatbot": "cd msteams-chatbot && npm start",
+    "build": "docker-compose build",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "dependencies": {
+    "fastify": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

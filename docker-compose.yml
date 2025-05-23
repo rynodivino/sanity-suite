@@ -1,0 +1,20 @@
+services:
+  badge-status:
+    build: ./badge-status
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./badge-status:/badge-status
+    command: "npm start"
+    environment:
+      - NODE_ENV=development
+
+  msteams-chatbot:
+    build: ./msteams-chatbot
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./msteams-chatbot:/msteams-chatbot
+    command: "npm start"
+    environment:
+      - NODE_ENV=development

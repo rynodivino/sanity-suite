@@ -1,0 +1,6 @@
+{
+  "release-1": {
+    "env1": "success",
+    "env2": "failed"
+  }
+}
